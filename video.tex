@@ -1,0 +1,96 @@
+% \documentclass{sig-alternate-10pt}
+%\documentclass{sig-alternate-2013}
+\documentclass[10pt,journal,cspaper,compsoc]{IEEEtran}
+\usepackage{times}
+\usepackage{balance}
+\usepackage{multirow}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{subfigure}
+%\usepackage{authblk}
+\usepackage{cite}
+% \usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+%\usepackage[belowskip=-0pt,aboveskip=0pt,skip=2pt,margin=0pt]{caption}
+%\usepackage[small,compact]{titlesec}
+% \usepackage{hyperref}
+% \hypersetup{
+%  colorlinks=false,
+%  pdfborder={0 0 0},
+% }
+% \usepackage{todonotes}
+\usepackage{subfigure}
+% \usepackage{epstopdf}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cases}
+%\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{amsfonts}
+\usepackage{color}
+
+\newenvironment{packed_itemize}{
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+}{\end{itemize}}
+\newenvironment{packed_enumerate}{
+\begin{enumerate}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+}{\end{enumerate}}
+
+\newcommand{\harpoon}{\overset{\rightharpoonup}}
+\newcommand{\approach}{{\tt Approach}}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%\newcommand{\fixme}[1]{{\color{red} #1}}
+\newcommand{\fixme}[1]{#1}
+\newcommand{\para}[1]{{\vspace{4pt} \bf \noindent #1 \hspace{10pt}}}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+\title{Title Here}
+ \author{Tianyi Wang,~\IEEEmembership{Member,~IEEE,}
+       % <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Tianyi Wang is with   the Depart. of Electronic Engineering,
+Tsinghua University, China and the Depart. of Computer Science, UC Santa Barbara, USA. Email: wty07@mails.tsinghua.edu.cn.}% <-this % stops a space
+\thanks{}}
+
+\markboth{TCSVT,~Vol.~x, No.~x, January~2015}%
+{Tianyi Wang\MakeLowercase{\textit{et al.}}: Title here}
+\IEEEcompsoctitleabstractindextext{
+\begin{abstract}
+TBA~\cite{karamshuk2015factors}
+\end{abstract}
+\begin{keywords}
+Computer Society, IEEEtran, journal, \LaTeX, paper, template
+\end{keywords}}
+\maketitle
+
+\IEEEdisplaynotcompsoctitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\input{introduction}
+\balance
+% \begin{small}
+\bibliographystyle{acm}
+\bibliography{video}
+% \end{small}
+
+\end{document}
