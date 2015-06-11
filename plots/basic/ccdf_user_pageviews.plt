@@ -20,6 +20,7 @@ set xrange [1:100000]
 #set xrange [0.1:100]
 set key bottom right
 
-plot 	"ccdf_user_pageviews.txt" u 1:($2*100) with l ls 1 notitle
+plot 	"ccdf_user_pageviews2.txt" u 1:($2*100) with l ls 1 notitle,\
+	"ccdf_user_pageviews2.txt" u 1:($3*100) with l lc rgbcolor 'red' lw 6 notitle
 
 exit
