@@ -8,7 +8,11 @@ PAPER=video
 
 TEXFILES = \
 	video.tex \
-	introduction.tex
+	introduction.tex \
+	background.tex \
+	data.tex \
+	spatial.tex \
+	temporal.tex 
 
 EPSFIGS = \
 
